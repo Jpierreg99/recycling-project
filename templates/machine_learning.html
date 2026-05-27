@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Machine Learning</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+
+<header class="hero-small">
+
+    <div class="hero-overlay">
+
+        <h1>Machine Learning</h1>
+
+        <p>
+            Machine Learning analysis focused on clustering models,
+            predictive insights, population behavior patterns,
+            and sustainability optimization in Bogotá.
+        </p>
+
+    </div>
+
+</header>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <a href="/">Home</a>
+
+        <a href="/crispml">CRISP-ML</a>
+
+        <a href="/business-understanding">Business Understanding</a>
+
+        <a href="/data-understanding">Data Understanding</a>
+
+        <a href="/data-engineering">Data Engineering</a>
+
+        <a href="/machine_learning">Machine Learning</a>
+
+    </nav>
+
+    <section class="container">
+
+    <div class="section" data-aos="fade-up">
+
+        <h2>Machine Learning Model</h2>
+
+        <p>
+            This phase focuses on the implementation of Machine Learning
+            techniques to analyze demographic behavior and sustainability
+            patterns related to urban recycling systems in Bogotá.
+        </p>
+
+        <p>
+            The project uses the K-Means clustering algorithm from
+            Scikit-learn to identify hidden population groups based
+            on normalized demographic variables.
+        </p>
+
+        <p>
+            The Machine Learning workflow includes:
+        </p>
+
+        <ul>
+            <li>Data preprocessing</li>
+            <li>Feature normalization</li>
+            <li>Model training using fit()</li>
+            <li>Predictions using predict()</li>
+            <li>Cluster visualization</li>
+            <li>Processed dataset generation</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <div class="section" data-aos="fade-up">
+
+        <h2>K-Means Clustering Visualization</h2>
+
+        <p>
+            The following visualization represents the clustering
+            process performed using the K-Means algorithm.
+        </p>
+
+        <p>
+            Population records were grouped into different clusters
+            according to normalized population behavior patterns.
+        </p>
+
+        <img
+            src="{{ url_for('static', filename='images/clusters.png') }}"
+            alt="Clusters"
+            class="analysis-image"
+        >
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <div class="section" data-aos="fade-up">
+
+        <h2>Model Training Process</h2>
+
+        <p>
+            The Machine Learning model was developed using the
+            Scikit-learn library in Python.
+        </p>
+
+        <p>
+            The dataset was normalized using MinMaxScaler to ensure
+            consistent variable scaling before training.
+        </p>
+
+        <p>
+            The K-Means algorithm was configured with:
+        </p>
+
+        <ul>
+            <li>4 clusters</li>
+            <li>Random state = 42</li>
+            <li>Normalized population feature</li>
+        </ul>
+
+        <p>
+            The training process was executed using:
+        </p>
+
+<pre>
+kmeans.fit(X)
+population['CLUSTER'] = kmeans.predict(X)
+</pre>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <div class="section" data-aos="fade-up">
+
+        <h2>Machine Learning Results</h2>
+
+        <p>
+            The model successfully classified demographic records
+            into multiple behavioral groups.
+        </p>
+
+        <p>
+            These clusters help identify population density patterns,
+            sustainability indicators, and recycling behavior trends
+            across Bogotá.
+        </p>
+
+        <p>
+            The processed dataset was exported automatically after
+            training and stored inside the processed data folder.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+    <!-- MAIN CONTAINER -->
+
+    <div class="container modern-container">
+
+        <!-- NORMALIZATION -->
+
+        <div class="section">
+
+            <h2>Data Normalization</h2>
+
+            <p>
+                Before training the Machine Learning model, the population variable
+                was normalized using Min-Max Scaling techniques.
+            </p>
+
+            <p>
+                Normalization ensures that values remain within a consistent numerical range,
+                improving clustering performance and reducing the impact of scale differences
+                between records.
+            </p>
+
+            <p>
+                The preprocessing stage is considered a critical component of the
+                CRISP-ML methodology and contributes directly to model stability.
+            </p>
+
+        </div>
+
+        <!-- CORRELATION -->
+
+        <div class="section">
+
+            <h2>Correlation Analysis</h2>
+
+            <p>
+                Correlation analysis was performed to evaluate relationships between
+                numerical variables contained within the demographic dataset.
+            </p>
+
+            <p>
+                The heatmap visualization helps identify positive and negative
+                correlations between variables, supporting feature selection and
+                Machine Learning preprocessing decisions.
+            </p>
+
+            <img src="{{ url_for('static', filename='images/correlation.png') }}"
+                 alt="Correlation"
+                 class="graph-image">
+
+        </div>
+
+        <!-- STATISTICAL SUMMARY -->
+
+        <div class="section">
+
+            <h2>Statistical Summary</h2>
+
+            <p>
+                Statistical analysis was performed to better understand the distribution
+                of numerical variables within the dataset.
+            </p>
+
+            <p>
+                Important metrics such as mean, standard deviation, minimum values,
+                maximum values, and quartiles were analyzed during the Data Understanding phase.
+            </p>
+
+            <p>
+                This analysis helped identify data consistency, detect possible anomalies,
+                and support preprocessing decisions before Machine Learning implementation.
+            </p>
+
+            <img src="{{ url_for('static', filename='images/statistical_summary.png') }}"
+                 alt="Statistical Summary"
+                 class="graph-image">
+
+        </div>
+
+        <!-- RESULTS -->
+
+        <div class="section">
+
+            <h2>Machine Learning Results</h2>
+
+            <p>
+                The clustering analysis successfully identified multiple demographic
+                behavior groups within the dataset.
+            </p>
+
+            <p>
+                These clusters may support future sustainability strategies, including:
+            </p>
+
+            <ul>
+
+                <li>Recycling station optimization</li>
+
+                <li>Urban sustainability planning</li>
+
+                <li>Waste management improvement</li>
+
+                <li>Population behavior analysis</li>
+
+                <li>Environmental policy support</li>
+
+            </ul>
+
+        </div>
+
+        <!-- DATASET EXPORT -->
+
+        <div class="section">
+
+            <h2>Processed Dataset Export</h2>
+
+            <p>
+                After model training and prediction generation, the processed dataset
+                was exported automatically into a new CSV file named:
+            </p>
+
+            <p>
+
+                <strong>population_clustered.csv</strong>
+
+            </p>
+
+            <p>
+                This dataset now contains:
+            </p>
+
+            <ul>
+
+                <li>Normalized population values</li>
+
+                <li>Predicted cluster labels</li>
+
+                <li>Preprocessed demographic information</li>
+
+            </ul>
+
+            <p>
+                Exporting processed datasets improves reproducibility and supports
+                future Machine Learning experimentation.
+            </p>
+
+        </div>
+
+        <!-- CONCLUSIONS -->
+
+        <div class="section">
+
+            <h2>Technical Conclusions</h2>
+
+            <p>
+                The Machine Learning phase successfully demonstrated the application
+                of unsupervised learning techniques using Scikit-learn and Python.
+            </p>
+
+            <p>
+                The K-Means clustering algorithm provided meaningful grouping results
+                that may contribute to data-driven sustainability planning in Bogotá.
+            </p>
+
+            <p>
+                The project integrates CRISP-ML methodology principles, Flask web
+                development, Data Engineering processes, and Machine Learning workflows
+                into a complete analytical solution.
+            </p>
+
+        </div>
+
+    </div>
+
+        <!-- FOOTER -->
+
+    <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-section">
+
+            <h3>Smart Recycling Recommendation System</h3>
+
+            <p>
+                Machine Learning platform focused on urban sustainability,
+                recycling analytics, and intelligent environmental solutions
+                for Bogotá.
+            </p>
+
+        </div>
+
+        <div class="footer-section">
+
+            <h3>Technologies</h3>
+
+            <ul>
+
+                <li>Python</li>
+                <li>Flask</li>
+                <li>Pandas</li>
+                <li>Scikit-Learn</li>
+                <li>Machine Learning</li>
+                <li>Data Analytics</li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-section">
+
+            <h3>CRISP-ML Process</h3>
+
+            <ul>
+
+                <li>Business Understanding</li>
+                <li>Data Understanding</li>
+                <li>Data Engineering</li>
+                <li>Machine Learning</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Smart Recycling Recommendation System |
+            Data Science & Machine Learning Project
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1200,
+        once: true
+    });
+</script>
+
+</body>
+
+</html>

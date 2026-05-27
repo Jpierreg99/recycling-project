@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Data Understanding</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <section class="hero-small">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Data Understanding</h1>
+
+            <p>
+                Exploratory Data Analysis focused on population density,
+                recycling infrastructure, waste generation, and urban
+                sustainability indicators in Bogotá.
+            </p>
+
+        </div>
+
+    </section>
+
+    <nav>
+
+        <a href="/">Home</a>
+        <a href="/crispml">CRISP-ML</a>
+        <a href="/business-understanding">Business Understanding</a>
+        <a href="/data-understanding">Data Understanding</a>
+        <a href="/data-engineering">Data Engineering</a>
+        <a href="/machine_learning">Machine Learning</a>
+
+    </nav>
+
+    <div class="container">
+
+        <section class="section">
+
+            <h2>Dataset Overview</h2>
+
+            <p>
+                The project integrates multiple public datasets related
+                to Bogotá’s urban population, waste collection systems,
+                and recycling locations.
+            </p>
+
+            <p>
+                The analysis process focused on identifying hidden
+                patterns, demographic behavior, and environmental
+                sustainability opportunities using exploratory data
+                analysis techniques.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>Dataset Metrics</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <h3>130K+</h3>
+
+                    <p>Population records analyzed</p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h3>19</h3>
+
+                    <p>Bogotá localities evaluated</p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-recycle"></i>
+
+                    <h3>14</h3>
+
+                    <p>Recycling collection locations</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>Exploratory Data Analysis</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <h3>Population Analysis</h3>
+
+                    <p>
+                        Histograms and demographic analysis were used
+                        to identify high-density urban sectors.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-filter"></i>
+
+                    <h3>Data Quality</h3>
+
+                    <p>
+                        Missing values, duplicates, and inconsistent
+                        records were analyzed during preprocessing.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <h3>Pattern Detection</h3>
+
+                    <p>
+                        Exploratory analysis allowed identification
+                        of population and sustainability trends.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>Key Insights</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <i class="fa-solid fa-city"></i>
+
+                    <h3>Urban Density</h3>
+
+                    <p>
+                        Some Bogotá localities present significantly
+                        higher population concentration patterns.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <h3>Environmental Impact</h3>
+
+                    <p>
+                        Recycling infrastructure distribution affects
+                        urban sustainability efficiency.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <h3>Machine Learning Preparation</h3>
+
+                    <p>
+                        Data exploration supported the preparation
+                        process for clustering algorithms.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <section class="section">
+
+    <h2>Dataset Preview</h2>
+
+    <p>
+        The following table represents a preview of the demographic
+        dataset used during the exploratory analysis phase.
+    </p>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Locality</th>
+                    <th>Population</th>
+                    <th>Waste Generation</th>
+                    <th>Recycling Points</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Suba</td>
+                    <td>1,252,000</td>
+                    <td>High</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>Kennedy</td>
+                    <td>1,230,000</td>
+                    <td>High</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>Engativá</td>
+                    <td>887,000</td>
+                    <td>Medium</td>
+                    <td>2</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+    <!-- STATISTICAL ANALYSIS -->
+
+<div class="section" data-aos="fade-up">
+
+    <h2>Statistical Summary</h2>
+
+    <p>
+        The statistical analysis provides an overview of the demographic
+        dataset used during the Data Understanding phase. The summary
+        includes descriptive statistics such as mean values, standard
+        deviation, minimum values, and maximum population indicators.
+    </p>
+
+    <p>
+        This analysis allows identification of population distribution
+        patterns, variability among Bogotá localities, and potential
+        outliers that may influence Machine Learning performance.
+    </p>
+
+    <div class="image-container">
+
+    <img
+        src="{{ url_for('static', filename='images/statistical_summary.png') }}"
+        alt="Statistical Summary"
+        class="analysis-image"
+    >
+
+    </div>
+
+</div>
+
+<!-- CORRELATION ANALYSIS -->
+
+<div class="section" data-aos="fade-up">
+
+    <h2>Correlation Analysis</h2>
+
+    <p>
+        Correlation analysis was performed to evaluate relationships
+        between numerical variables contained within the demographic dataset.
+    </p>
+
+    <p>
+        The heatmap visualization helps identify positive and negative
+        correlations between variables, supporting feature selection
+        and Machine Learning preprocessing decisions.
+    </p>
+
+    <img
+        src="{{ url_for('static', filename='images/correlation.png') }}"
+        alt="Correlation Matrix"
+        class="cluster-image"
+    >
+
+</div>
+
+<!-- DATA QUALITY -->
+
+<div class="section" data-aos="fade-up">
+
+    <h2>Data Quality Evaluation</h2>
+
+    <div class="cards">
+
+        <div class="card" data-aos="zoom-in">
+
+            <h3>131,502 Records</h3>
+
+            <p>
+                The demographic dataset contains more than one hundred
+                thousand population records for Bogotá.
+            </p>
+
+        </div>
+
+        <div class="card" data-aos="zoom-in">
+
+            <h3>Missing Values</h3>
+
+            <p>
+                Exploratory analysis identified no significant missing
+                values within the primary demographic variables.
+            </p>
+
+        </div>
+
+        <div class="card" data-aos="zoom-in">
+
+            <h3>Data Consistency</h3>
+
+            <p>
+                Variable formats and population distributions demonstrate
+                consistent data quality suitable for Machine Learning analysis.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <section class="section">
+
+    <h2>Risks and Limitations</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <h3>Dataset Limitations</h3>
+
+            <p>
+                Public demographic datasets may contain outdated
+                or incomplete records that could affect analytical
+                accuracy and Machine Learning performance.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-database"></i>
+
+            <h3>Data Availability</h3>
+
+            <p>
+                Recycling infrastructure data availability may limit
+                the precision of sustainability recommendations
+                across Bogotá localities.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <h3>Model Constraints</h3>
+
+            <p>
+                K-Means clustering identifies patterns but does not
+                guarantee predictive causality or future behavioral
+                certainty.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-section">
+
+            <h3>Smart Recycling Recommendation System</h3>
+
+            <p>
+                Machine Learning platform focused on urban sustainability,
+                recycling analytics, and intelligent environmental solutions
+                for Bogotá.
+            </p>
+
+        </div>
+
+        <div class="footer-section">
+
+            <h3>Technologies</h3>
+
+            <ul>
+
+                <li>Python</li>
+                <li>Flask</li>
+                <li>Pandas</li>
+                <li>Scikit-Learn</li>
+                <li>Machine Learning</li>
+                <li>Data Analytics</li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-section">
+
+            <h3>CRISP-ML Process</h3>
+
+            <ul>
+
+                <li>Business Understanding</li>
+                <li>Data Understanding</li>
+                <li>Data Engineering</li>
+                <li>Machine Learning</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Smart Recycling Recommendation System |
+            Data Science & Machine Learning Project
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>
